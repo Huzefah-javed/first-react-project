@@ -1,0 +1,228 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    background-color: #2C2C34; 
+    font-family: 'Roboto', sans-serif; 
+}
+
+.main {
+    min-height: 30rem;
+    width: 90%;
+    margin-top: 3rem;
+    max-width: 35rem; 
+    background-color: #ffffff; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1.5rem; 
+    padding: 2rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.2s; 
+}
+
+.main:hover {
+    transform: scale(1.02); 
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem; 
+}
+
+.heading {
+    font-size: 2.5rem;
+    color: #333333; 
+}
+
+.date-time {
+    font-size: 1.2rem;
+    color: #777777; 
+}
+
+.form {
+    margin: 1rem 0;
+    display: flex; 
+    height: 3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+}
+
+.input-field {
+    height: 100%;
+    border: none;
+    padding: 0 1rem; 
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    font-size: 1rem; 
+    outline: none; 
+}
+
+.input-field:focus {
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); 
+}
+
+.add-todoBtn {
+    background-color: #4CAF50; 
+    height: 100%;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 0 1rem;
+    color: white; 
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+.add-todoBtn:hover {
+    background-color: #45a049; 
+    transform: scale(1.05); 
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list {
+    height: 3rem;
+    width: 100%;
+    max-width: 85%; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 0 1rem; 
+    transition: background-color 0.3s; 
+}
+
+.list:hover {
+    background-color: #eaeaea; 
+}
+
+.input-li {
+    flex-grow: 1;
+    font-size: large;
+    padding: 1rem;
+    color: #333;
+}
+
+.checked {
+    text-decoration: line-through;
+    color: #999; 
+}
+
+.unChecked {
+    text-decoration: none;
+}
+
+.check-Btn {
+    font-size: 1.5rem; 
+    margin-right: 0.5rem;
+    background-color: #18e318; 
+    color: white;
+    border-radius: 50%; 
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+.check-Btn:hover {
+    background-color: #16b016; 
+    transform: scale(1.1); 
+}
+.clearAll {
+    color: #ffffff; 
+    background-color: #ff3d3d; 
+    margin: 2rem 0; 
+    padding: 0.75rem 1.5rem; 
+    border: none; 
+    border-radius: 1rem; 
+    font-size: 1.2rem; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+.clearAll:hover {
+    background-color: #e63939; 
+    transform: scale(1.05); 
+}
+.del-Btn {
+    font-size: 1.8rem; 
+    margin-left: 0.5rem;
+    color: #ff4d4d; 
+    border-radius: 50%; 
+    border: none; 
+    padding: 0.5rem; 
+    cursor: pointer;
+    transition: color 0.3s, transform 0.2s; 
+}
+
+.del-Btn:hover {
+    color: #cc0000; 
+    transform: scale(1.1); 
+}
+
+@media (max-width: 600px) {
+    .main {
+        width: 90%; 
+        padding: 1rem; 
+    }
+
+    .heading {
+        font-size: 2rem; 
+    }
+
+    .date-time {
+        font-size: 1rem; 
+    }
+
+    .form {
+        height: 2.5rem; 
+    }
+
+    .input-field {
+        width: 70%; 
+        font-size: 0.9rem; 
+    }
+    
+    .add-todoBtn {
+        font-size: 0.9rem; 
+        padding: 0 0.5rem; 
+    }
+
+    .list {
+        height: 2.5rem; 
+        padding: 0 0.5rem; 
+    }
+
+    .input-li {
+        font-size: 0.9rem; 
+    }
+
+    .check-Btn, .del-Btn, .edit-Btn {
+        font-size: 1.5rem; 
+    }
+
+    .clearAll {
+        padding: 0.5rem; 
+        font-size: 1rem; 
+    }
+}
+
