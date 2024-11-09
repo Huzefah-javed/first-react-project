@@ -4,7 +4,8 @@ import { TodoList } from "./TodoList";
 import { useState } from "react";
 import { DateTime } from "./DateAndTime";
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2134731362274430"
+     crossorigin="anonymous"></script>
 export const TodoApp = () => {
     const [ListTodo, setListTodo] = useState(JSON.parse(localStorage.getItem("TodoList"))||[])
     localStorage.setItem("TodoList", JSON.stringify(ListTodo))
